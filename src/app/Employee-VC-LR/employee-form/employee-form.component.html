@@ -1,0 +1,15 @@
+
+<div>
+    <label for="name">Name</label>
+    <input type="text" name="name" #empNameInput>
+</div>
+<div>
+    <label for="name">Age</label>
+    <input type="number" name="age" #empAgeInput>
+</div>
+<div>
+    <label for="name">Gender</label>
+    <input type="text" name="gender" #empGenderInput>
+</div>
+
+<button (click)="addEmployee(empNameInput)">Add Employee to List</button>

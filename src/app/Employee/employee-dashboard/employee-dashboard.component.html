@@ -1,0 +1,29 @@
+<!-- 
+<div>
+    <label for="name">Name</label>
+    <input type="text" name="name" [(ngModel)]="empName">
+</div>
+<div>
+    <label for="name">Age</label>
+    <input type="number" name="age" [(ngModel)]="empAge">
+</div>
+<div>
+    <label for="name">Gender</label>
+    <input type="text" name="gender" [(ngModel)]="empGender">
+</div>
+
+<button (click)="onAddEmployee()">Add Employee to List</button> -->
+<app-employee-form (employeeAdded)="onEmployeeAdded($event)"></app-employee-form>
+<hr>
+<div class="row">
+    <!-- <div class="card" *ngFor="let emp of employeeList">
+        <h3>{{emp.name}}</h3>
+        <h4>{{emp.age}}</h4>
+        <h4>{{emp.gender}}</h4>
+    </div> -->
+</div>
+<app-employee-list *ngFor="let employee of employeeList" [emp]="employee"></app-employee-list>
+<!-- <div class="row">
+    {{emp.name}}
+    {{emp.gender}}
+</div> -->

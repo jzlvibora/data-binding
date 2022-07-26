@@ -1,0 +1,15 @@
+
+<div>
+    <label for="name">Name</label>
+    <input type="text" name="name" [(ngModel)]="empName">
+</div>
+<div>
+    <label for="name">Age</label>
+    <input type="number" name="age" [(ngModel)]="empAge">
+</div>
+<div>
+    <label for="name">Gender</label>
+    <input type="text" name="gender" [(ngModel)]="empGender">
+</div>
+
+<button (click)="addEmployee()">Add Employee to List</button>
